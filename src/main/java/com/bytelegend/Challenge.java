@@ -13,7 +13,7 @@ public class Challenge {
     public static Object firstOrNull(Object[] array) {
         if (array.length ==0) {
             return null;
-        } else if {
+        } else {
             return array[0];
         }
     }
@@ -21,7 +21,7 @@ public class Challenge {
     public static Object lastOrNull(Object[] array) {
         if (array.length == 0) {
             return null;
-        } else if {
+        } else {
             return array[array.length-1];
         }
     }
