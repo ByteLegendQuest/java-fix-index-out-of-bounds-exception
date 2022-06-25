@@ -21,6 +21,6 @@ public class Challenge {
         if (array.length == 0) {
             return null;
         }
-        return array[array.length];
+        return array[array.length-1];
     }
 }
