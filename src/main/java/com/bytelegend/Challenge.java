@@ -1,6 +1,6 @@
 package com.bytelegend;
 
-public class Challenge {
+public class Main {
     public static void main(String[] args) {
         System.out.println(firstOrNull(new Object[0]));
         System.out.println(firstOrNull(new Object[] {1}));
@@ -11,10 +11,16 @@ public class Challenge {
     }
 
     public static Object firstOrNull(Object[] array) {
+        if (array.length == 0) {
+            return null;
+        }
         return array[0];
     }
 
     public static Object lastOrNull(Object[] array) {
-        return array[array.length-1];
+        if (array.length == 0) {
+            return null;
+        }
+        return array[array.length - 1];
     }
 }
