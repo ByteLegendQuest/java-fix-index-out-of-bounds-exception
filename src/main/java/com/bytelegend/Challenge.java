@@ -11,10 +11,18 @@ public class Challenge {
     }
 
     public static Object firstOrNull(Object[] array) {
-        return array[1];
+        try {
+            return array[0];
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     public static Object lastOrNull(Object[] array) {
-        return array[array.length];
+        try {
+            return array[array.length - 1];
+        } catch (Exception e) {
+            return null;
+        }
     }
 }
