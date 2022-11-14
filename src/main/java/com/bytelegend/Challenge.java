@@ -10,11 +10,15 @@ public class Challenge {
         System.out.println(lastOrNull(new Object[] {"a", "b", "c"}));
     }
 
-    public static Object firstOrNull(Object[] array) {
-        return array[1];
+   public static Object firstOrNull(Object[] array) {
+        if(null == array || 0 == array.length)
+            return null;
+        return array[0];
     }
 
     public static Object lastOrNull(Object[] array) {
-        return array[array.length];
+        if(null == array || 0 == array.length)
+            return null;
+        return array[array.length - 1];
     }
 }
