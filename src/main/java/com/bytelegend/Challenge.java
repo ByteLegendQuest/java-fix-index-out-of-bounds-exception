@@ -15,6 +15,6 @@ public class Challenge {
     }
 
     public static Object lastOrNull(Object[] array) {
-        return array.length > 0 ? array[array.length] : null;
+        return array.length > 0 ? array[array.length - 1] : null;
     }
 }
